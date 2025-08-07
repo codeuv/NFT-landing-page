@@ -1,5 +1,4 @@
 
-
 /*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById('nav-menu'),
     navToggle = document.getElementById('nav-toggle'),
@@ -42,3 +41,16 @@ const scrollHeader = () => {
 window.addEventListener('scroll', scrollHeader)
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+
+const sr = ScrollReveal({
+    origin: 'bottom',
+    distance: '60px',
+    duration: 2500,
+})
+
+sr.reveal(`.home-imgs`,{distance: '120px',delay: 400})
+sr.reveal(`.home-title`, {delay: 1000})
+sr.reveal(`.home-description`, {delay: 1200})
+sr.reveal(`.home-button`,{delay:1400})
+sr.reveal(`.home-footer`,{delay:1600})
+sr.reveal(`.home-data div`,{origin:'right',interval : 100,delay:1800})
